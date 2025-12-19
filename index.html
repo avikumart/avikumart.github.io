@@ -87,7 +87,7 @@
                 >
                     <i data-lucide="linkedin" class="w-6 h-6"></i>
                 </a>
-                <!-- Kaggle Profile Added (using a Lucide chart icon) -->
+                <!-- Kaggle Profile -->
                 <a 
                     href="https://www.kaggle.com/avikumart" 
                     target="_blank" 
@@ -97,7 +97,7 @@
                 >
                     <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
                 </a>
-                <!-- X/Twitter Profile Added -->
+                <!-- X/Twitter Profile -->
                 <a 
                     href="https://x.com/avikumart_" 
                     target="_blank" 
@@ -183,9 +183,23 @@
                 </section>
             </div>
 
-            <!-- Right Column (Experience & Projects) -->
+            <!-- Right Column (About, Experience & Projects) -->
             <div class="lg:col-span-2 lg:pt-10">
                 
+                <!-- About Me Section -->
+                <section class="py-12 bg-white p-8 shadow-xl rounded-xl mb-10 border-t-4 border-green-500" id="about-me">
+                    <h2 class="text-3xl font-bold mb-4 flex items-center text-gray-800">
+                        <i data-lucide="user" class="w-7 h-7 mr-3 text-green-600"></i>
+                        About Me
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-md">
+                        Avi Kumar Talaviya is a data scientist and ML engineer passionate about turning complex data into actionable intelligence. With hands-on experience in statistical inference, data visualisation, data analytics tools like pandas, numpy, statsmodels, sklearn, machine learning, deep learning, and large language models, he has applied advanced analytics to domains ranging from healthcare EEG/fMRI research to environmental AQI forecasting and traffic-severity prediction. 
+                    </p>
+                    <p class="text-gray-700 leading-relaxed text-md mt-4">
+                        Avi is skilled in Python, R, SQL, cloud deployment on AWS, and building end-to-end AI solutions using frameworks like TensorFlow, PyTorch, and LangChain. He enjoys designing scalable pipelines, optimising models on high-performance computing environments, and mentoring learners in data analytics. Through academic research, professional training roles, and open-source projects, Avi continues to bridge data science and real-world impact. Avi Kumar Talaviya is suitable for the data science, machine learning and natural language processing data scientist roles and open for such roles in the technology, product and healthcare domains.
+                    </p>
+                </section>
+
                 <!-- LLM Feature: Interview Prep -->
                 <section class="py-6 bg-green-50 rounded-xl px-6 mb-8 shadow-lg">
                     <h2 class="text-2xl font-bold mb-4 flex items-center text-gray-800">
@@ -285,41 +299,30 @@
                     </h2>
                     
                     <div class="timeline-container">
-                        
-                        <!-- Timeline Item 1: Research Collaborator -->
                         <div class="timeline-item">
                             <div class="text-xs text-gray-500 italic">Aug 2025 - Present</div>
                             <h4 class="text-lg font-semibold text-green-700 mt-1">Research Collaborator - University of Arizona</h4>
                             <p class="text-sm text-gray-700">Leading EEG-fMRI fusion project and developing multimodal transformer models.</p>
                         </div>
-
-                        <!-- Timeline Item 2: Data Specialist -->
                         <div class="timeline-item">
                             <div class="text-xs text-gray-500 italic">Sep 2024 - Apr 2025</div>
                             <h4 class="text-lg font-semibold text-green-700 mt-1">Data Specialist - TOPS Technologies</h4>
                             <p class="text-sm text-gray-700">Data cleaning/optimization, strategic analysis, and BI development.</p>
                         </div>
-
-                        <!-- Timeline Item 3: Junior ML Engineer (Project) -->
                         <div class="timeline-item">
                             <div class="text-xs text-gray-500 italic">Sept 2022 - July 2023</div>
                             <h4 class="text-lg font-semibold text-green-700 mt-1">Junior ML Engineer - Omdena (Prediction Project)</h4>
                             <p class="text-sm text-gray-700">Developed Decision Tree model and used SMOTE/K-means for high-risk patient prediction.</p>
                         </div>
-                        
-                        <!-- Timeline Item 4: Data Science Project Lead -->
                         <div class="timeline-item">
                             <div class="text-xs text-gray-500 italic">Mar 2023 - May 2023</div>
                             <h4 class="text-lg font-semibold text-green-700 mt-1">Data Science Project Lead - Omdena Mumbai Chapter</h4>
                             <p class="text-sm text-gray-700">Led AQI prediction project and implemented AWS cloud data ingestion pipeline.</p>
                         </div>
-
-                         <!-- Timeline Item 5: Bachelor's Completion -->
                         <div class="timeline-item">
                             <div class="text-xs text-gray-500 italic">July 2024</div>
                             <h4 class="text-lg font-semibold text-gray-800 mt-1">Graduation: Bachelor's in Data Science and Analytics</h4>
                         </div>
-                        
                     </div>
                 </section>
 
@@ -483,7 +486,7 @@
                         <i data-lucide="git-branch" class="w-7 h-7 mr-3 text-green-600"></i>
                         Recent GitHub Activity
                     </h2>
-                    <p class="text-sm text-gray-700 mb-4">Live updates from the GitHub activity feed (may require external content loading):</p>
+                    <p class="text-sm text-gray-700 mb-4">Live updates from the GitHub activity feed:</p>
                     <div class="bg-white p-2 rounded-lg shadow-inner">
                         <iframe 
                             src="https://rss.bloople.net/?url=https://github.com/avikumart.atom" 
@@ -501,7 +504,7 @@
                         <i data-lucide="book-open-text" class="w-7 h-7 mr-3 text-green-600"></i>
                         Latest Articles on Medium
                     </h2>
-                    <p class="text-sm text-gray-700 mb-4">Read my latest posts on Data Science and ML (may require external content loading):</p>
+                    <p class="text-sm text-gray-700 mb-4">Read my latest posts on Data Science and ML:</p>
                     <div class="bg-white p-2 rounded-lg shadow-inner">
                         <iframe 
                             src="https://rss.bloople.net/?url=https://medium.com/feed/@avikumart_" 
@@ -522,28 +525,21 @@
                     <p class="text-sm text-gray-700 mb-6">Interested in collaborating or just want to say hello? Fill out the form below to send me a message directly. (Note: This will open your default email client to send the message.)</p>
                     
                     <form action="mailto:avikumart@arizona.edu" method="GET" enctype="text/plain" class="space-y-4 bg-white p-6 rounded-lg shadow-xl">
-                        
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
                             <input type="text" id="name" name="subject" placeholder="Your Name" 
                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required>
-                            <!-- Subject field is used for the name/subject line in the email client -->
                         </div>
-                        
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
                             <input type="email" id="email" name="cc" placeholder="your.email@example.com" 
                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required>
-                            <!-- CC field is used to hold the sender's email for easy reply -->
                         </div>
-
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
                             <textarea id="message" name="body" rows="5" placeholder="Enter your message here..." 
                                       class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required></textarea>
-                            <!-- Body field holds the main message content -->
                         </div>
-
                         <button type="submit" 
                                 class="w-full px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300 shadow-md flex items-center justify-center">
                             <i data-lucide="send" class="w-5 h-5 mr-2"></i>
@@ -551,7 +547,6 @@
                         </button>
                     </form>
                 </section>
-
 
             </div>
         </div>
@@ -574,13 +569,14 @@
         lucide.createIcons();
     </script>
     
+    <!-- Gemini Logic -->
     <script>
         const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=";
-        const API_KEY = ""; // Canvas will provide this at runtime
+        const API_KEY = ""; // Provided by environment
 
         function getProfileContent() {
-            // Scrape text content from relevant sections
             const sections = [
+                document.getElementById('about-me'),
                 document.getElementById('technical-expertise'),
                 document.getElementById('work-experience'),
                 document.getElementById('research-work'),
@@ -594,81 +590,31 @@
                 }
             });
 
-            // Clean up excessive whitespace and unwanted phrases
-            content = content.replace(/\s+/g, ' ').trim();
-            content = content.replace(/Projects & Achievements/g, '');
-            content = content.replace(/Technical Expertise/g, '');
-            content = content.replace(/Work Experience/g, '');
-            content = content.replace(/Research Work/g, '');
-            content = content.replace(/Generative AI & LLMs/g, '');
-            content = content.replace(/Data & ML Engineering/g, '');
-            content = content.replace(/Cloud & MLOps\/DevOps/g, '');
-            content = content.replace(/Deep Learning/g, '');
-            content = content.replace(/Timeline/g, '');
-
-            return content.substring(0, 8000); // Limit size for API call
+            return content.replace(/\s+/g, ' ').trim().substring(0, 8000);
         }
 
         async function generateQuestion(profileContent) {
-            const systemPrompt = "You are a Senior Data Science Hiring Manager from a top tech company. Your goal is to generate a highly specific, challenging, and behavioral interview question based *only* on the provided candidate's profile. The question must require a quantifiable, STAR-format answer. Output ONLY the question text, starting with the prompt phrase 'Tell me about a time when...' or 'Describe a project where...'.";
-            const userQuery = `Based on the following candidate profile, generate one challenging, quantifiable behavioral interview question suitable for a Senior Data Scientist role:\n\n--- PROFILE START ---\n${profileContent}\n--- PROFILE END ---`;
+            const systemPrompt = "You are a Senior Data Science Hiring Manager. Generate one challenging behavioral interview question requiring a quantifiable STAR-format answer based on the profile.";
+            const userQuery = `Based on the candidate profile, generate one challenging interview question:\n\n${profileContent}`;
             
             const payload = {
                 contents: [{ parts: [{ text: userQuery }] }],
-                systemInstruction: {
-                    parts: [{ text: systemPrompt }]
-                },
-                config: {
-                    // Safety settings for a professional interview context
-                    "safetySettings": [
-                        {
-                            "category": "HARM_CATEGORY_HARASSMENT",
-                            "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-                        },
-                        {
-                            "category": "HARM_CATEGORY_HATE_SPEECH",
-                            "threshold": "BLOCK_MEDIUM_AND_ABOVE"
-                        }
-                    ]
-                }
+                systemInstruction: { parts: [{ text: systemPrompt }] }
             };
             
-            let response = null;
-            let result = null;
-            let attempts = 0;
-            const maxAttempts = 3;
+            try {
+                const response = await fetch(API_URL + API_KEY, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
 
-            while (attempts < maxAttempts) {
-                try {
-                    const fetchOptions = {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    };
-
-                    response = await fetch(API_URL + API_KEY, fetchOptions);
-
-                    if (!response.ok) {
-                        if (response.status === 429 && attempts < maxAttempts - 1) {
-                            const delay = Math.pow(2, attempts) * 1000;
-                            await new Promise(resolve => setTimeout(resolve, delay));
-                            attempts++;
-                            continue; // Retry
-                        }
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-
-                    result = await response.json();
-                    break; // Success, exit loop
-
-                } catch (error) {
-                    console.error("Gemini API call failed:", error);
-                    return "Sorry, I couldn't generate a question right now. Please try again later.";
-                }
+                const result = await response.json();
+                return result?.candidates?.[0]?.content?.parts?.[0]?.text || "Error: Could not generate question.";
+            } catch (error) {
+                console.error("Gemini error:", error);
+                return "Sorry, I couldn't generate a question right now.";
             }
-
-            const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
-            return text || "Error: The AI model could not generate a suitable question.";
         }
 
         document.getElementById('generate-question-btn').addEventListener('click', async () => {
