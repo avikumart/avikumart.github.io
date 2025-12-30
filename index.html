@@ -17,7 +17,7 @@
         .font-serif-custom {
             font-family: 'Merriweather', serif;
         }
-        /* Custom Scrollbar for a sleek look */
+        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -25,44 +25,38 @@
             background: #f1f1f1;
         }
         ::-webkit-scrollbar-thumb {
-            background: #10b981; /* Green-500 */
+            background: #10b981;
             border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #059669; /* Green-600 */
+            background: #059669;
         }
 
-        /* Custom Timeline Styling */
+        /* Improved Timeline Styling */
         .timeline-container {
             position: relative;
-            padding-left: 30px;
-        }
-        .timeline-container::before {
-            content: '';
-            position: absolute;
-            width: 4px;
-            background-color: #10b981; /* Green-500 */
-            top: 0;
-            bottom: 0;
-            left: 10px;
+            margin-left: 0.75rem;
+            padding-left: 2rem;
+            border-left: 3px solid #10b981;
         }
         .timeline-item {
             position: relative;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
         }
         .timeline-item::before {
             content: '';
             position: absolute;
             width: 14px;
             height: 14px;
-            background-color: #059669; /* Green-600 */
+            background-color: #059669;
             border: 2px solid white;
             border-radius: 50%;
-            left: 3px;
+            left: -2.5rem; 
+            margin-left: -1px;
             top: 6px;
-            z-index: 1;
-            box-shadow: 0 0 0 3px #10b981;
+            z-index: 10;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
         }
     </style>
 </head>
@@ -77,61 +71,29 @@
                 <p class="mt-1 text-sm sm:text-base text-gray-400 font-mono italic">Specializing in Generative AI, Advanced RAG solutions, and scalable MLOps.</p>
             </div>
             <div class="mt-6 md:mt-0 flex space-x-4">
-                <!-- LinkedIn Profile -->
-                <a 
-                    href="https://www.linkedin.com/in/avikumar-talaviya-739153147/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105"
-                    aria-label="LinkedIn Profile"
-                >
+                <a href="https://www.linkedin.com/in/avikumar-talaviya-739153147/" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105" aria-label="LinkedIn Profile">
                     <i data-lucide="linkedin" class="w-6 h-6"></i>
                 </a>
-                <!-- Kaggle Profile -->
-                <a 
-                    href="https://www.kaggle.com/avikumart" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105"
-                    aria-label="Kaggle Profile"
-                >
+                <a href="https://www.kaggle.com/avikumart" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105" aria-label="Kaggle Profile">
                     <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
                 </a>
-                <!-- X/Twitter Profile -->
-                <a 
-                    href="https://x.com/avikumart_" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105"
-                    aria-label="X Profile"
-                >
+                <a href="https://x.com/avikumart_" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105" aria-label="X Profile">
                     <i data-lucide="twitter" class="w-6 h-6"></i>
                 </a>
-                <a 
-                    href="https://github.com/avikumart" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105"
-                    aria-label="GitHub Profile"
-                >
+                <a href="https://github.com/avikumart" target="_blank" rel="noopener noreferrer" class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105" aria-label="GitHub Profile">
                     <i data-lucide="github" class="w-6 h-6"></i>
                 </a>
-                <a 
-                    href="mailto:avikumart@arizona.edu" 
-                    class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105"
-                    aria-label="Email"
-                >
+                <a href="mailto:avikumart@arizona.edu" class="p-3 bg-gray-700 rounded-full hover:bg-green-500 transition duration-300 transform hover:scale-105" aria-label="Email Avi">
                     <i data-lucide="mail" class="w-6 h-6"></i>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Layout -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="lg:grid lg:grid-cols-3 lg:gap-10">
             
-            <!-- Left Column (Skills & Education) -->
+            <!-- Left Column: Expertise & Education -->
             <div class="lg:col-span-1 lg:pt-10">
                 
                 <!-- Technical Expertise Section -->
@@ -150,7 +112,7 @@
                             <p class="text-sm text-gray-700 leading-relaxed">Python, R, SQL, TensorFlow, PyTorch, Keras, Scikit-learn, Pandas, Matplotlib, Data Structures and Algorithms, Text/Image Analysis.</p>
                         </div>
                         <div class="bg-white p-6 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-green-500">
-                            <h3 class="text-lg font-bold text-gray-800 mb-2 border-b pb-1">Cloud & MLOps/DevOps</h3>
+                            <h3 class="text-lg font-bold text-gray-800 mb-2 border-b pb-1">Cloud & MLOps</h3>
                             <p class="text-sm text-gray-700 leading-relaxed">AWS (EC2, Lambda, S3), Azure Data Warehousing, HPC, CI/CD, MLOps, Prefect, Spark/PySpark, Git/GitHub.</p>
                         </div>
                         <div class="bg-white p-6 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl hover:border-b-4 hover:border-green-500">
@@ -168,22 +130,32 @@
                     </h2>
                     <div class="space-y-6">
                         <div class="bg-white p-6 shadow-xl rounded-xl border-r-4 border-green-500">
-                            <h3 class="text-xl font-semibold text-gray-900">M.S. in Information Science (Specialization: ML)</h3>
+                            <h3 class="text-xl font-semibold text-gray-900">M.S. in Information Science (ML)</h3>
                             <p class="text-md text-green-700 mt-1">University of Arizona</p>
-                            <p class="text-sm text-gray-500 italic mt-1">July 2024 - May 2026 | Current GPA: 4.0</p>
-                            <p class="mt-2 text-sm text-gray-600">Coursework: Machine Learning, Deep Learning, Applied NLP, Data Mining, Cloud Data Warehousing (Azure).</p>
+                            <p class="text-sm text-gray-500 italic mt-1">July 2024 - May 2026 | GPA: 4.0</p>
+                            <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                <li>Machine Learning & Deep Learning</li>
+                                <li>Applied Natural Language Processing</li>
+                                <li>Data Mining & Analysis</li>
+                                <li>Cloud Data Warehousing (Azure)</li>
+                            </ul>
                         </div>
                         <div class="bg-white p-6 shadow-xl rounded-xl border-r-4 border-green-500">
-                            <h3 class="text-xl font-semibold text-gray-900">Bachelor's in Data Science and Analytics</h3>
+                            <h3 class="text-xl font-semibold text-gray-900">Bachelor's in Data Science</h3>
                             <p class="text-md text-green-700 mt-1">Jain University</p>
-                            <p class="text-sm text-gray-500 italic mt-1">Aug 2021 - July 2024 | Current CGPA: 9.3/10</p>
-                            <p class="mt-2 text-sm text-gray-600">Coursework: Statistics, Machine Learning, Data Mining, Time-Series Analysis.</p>
+                            <p class="text-sm text-gray-500 italic mt-1">Aug 2021 - July 2024 | CGPA: 9.3/10</p>
+                            <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                <li>Statistical Inference & Modeling</li>
+                                <li>Machine Learning Algorithms</li>
+                                <li>Time-Series Analysis</li>
+                                <li>Advanced Data Visualization</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
             </div>
 
-            <!-- Right Column (About, Experience & Projects) -->
+            <!-- Right Column: About, Experience, Projects -->
             <div class="lg:col-span-2 lg:pt-10">
                 
                 <!-- About Me Section -->
@@ -196,34 +168,25 @@
                         Avi Kumar Talaviya is a data scientist and ML engineer passionate about turning complex data into actionable intelligence. With hands-on experience in statistical inference, data visualisation, data analytics tools like pandas, numpy, statsmodels, sklearn, machine learning, deep learning, and large language models, he has applied advanced analytics to domains ranging from healthcare EEG/fMRI research to environmental AQI forecasting and traffic-severity prediction. 
                     </p>
                     <p class="text-gray-700 leading-relaxed text-md mt-4">
-                        Avi is skilled in Python, R, SQL, cloud deployment on AWS, and building end-to-end AI solutions using frameworks like TensorFlow, PyTorch, and LangChain. He enjoys designing scalable pipelines, optimising models on high-performance computing environments, and mentoring learners in data analytics. Through academic research, professional training roles, and open-source projects, Avi continues to bridge data science and real-world impact. Avi Kumar Talaviya is suitable for the data science, machine learning and natural language processing data scientist roles and open for such roles in the technology, product and healthcare domains.
+                        Avi is skilled in Python, R, SQL, cloud deployment on AWS, and building end-to-end AI solutions using frameworks like TensorFlow, PyTorch, and LangChain. He enjoys designing scalable pipelines, optimising models on high-performance computing environments, and mentoring learners in data analytics. Avi Kumar Talaviya is suitable for the data science, machine learning and natural language processing data scientist roles and open for such roles in the technology, product and healthcare domains.
                     </p>
                 </section>
 
-                <!-- LLM Feature: Interview Prep -->
+                <!-- Interview Prep Feature -->
                 <section class="py-6 bg-green-50 rounded-xl px-6 mb-8 shadow-lg">
                     <h2 class="text-2xl font-bold mb-4 flex items-center text-gray-800">
                         <i data-lucide="speech" class="w-6 h-6 mr-3 text-green-600"></i>
                         Interview Prep ✨ (Powered by Gemini)
                     </h2>
-                    <p class="text-sm text-gray-700 mb-4">Click below to generate a challenging, custom interview question based on your skills and experience listed on this page. Practice your quantifiable, STAR-format answers!</p>
-                    <button id="generate-question-btn" 
-                            class="w-full md:w-auto px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300 shadow-md flex items-center justify-center disabled:bg-gray-400"
-                            aria-label="Generate Interview Question"
-                    >
-                        <i data-lucide="sparkles" class="w-5 h-5 mr-2"></i>
-                        Generate Custom DS Question
+                    <p class="text-sm text-gray-700 mb-4">Click to generate a challenging interview question based on the experience and projects listed on this page.</p>
+                    <button id="generate-question-btn" class="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300 shadow-md flex items-center disabled:bg-gray-400">
+                        <i data-lucide="sparkles" class="w-5 h-5 mr-2"></i> Generate DS Question
                     </button>
-
                     <div id="question-loading" class="mt-4 text-green-600 hidden">
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="loader" class="w-5 h-5 animate-spin"></i>
-                            <span>Analyzing profile...</span>
-                        </div>
+                        <i data-lucide="loader" class="w-5 h-5 animate-spin inline mr-2"></i> Analyzing profile...
                     </div>
-
                     <div id="question-output" class="mt-4 p-4 bg-white border border-green-200 rounded-lg hidden">
-                        <h4 class="text-md font-bold text-green-800 mb-2">Your Challenge:</h4>
+                        <h4 class="text-md font-bold text-green-800 mb-1">Your Challenge:</h4>
                         <p id="question-text" class="text-gray-900 italic"></p>
                     </div>
                 </section>
@@ -235,405 +198,269 @@
                         Work Experience
                     </h2>
                     <div class="space-y-8">
-                        
                         <!-- Research Collaborator -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl border-l-4 border-green-500 hover:border-green-600">
-                            <h3 class="text-xl font-semibold text-gray-900">Research Collaborator at University of Arizona - ECE</h3>
-                            <p class="text-sm text-gray-500 italic mt-1">August 2025 - Present | Tucson, AZ | Part-time</p>
-                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 ml-2">
-                                <li class="text-sm">Designed and deployed data-preprocessing pipelines for EEG-fMRI signals, resolving inconsistencies and boosting downstream model stability by 15%.</li>
-                                <li class="text-sm">Implemented YOLO-based object detection to automate region-of-interest identification in neuroimaging data, cutting manual labelling time by 30%.</li>
-                                <li class="text-sm">Trained and fine-tuned transformer models on the university’s high-performance computing cluster, reducing training runtime by 25%.</li>
-                                <li class="text-sm">Integrated multi-modal EEG and fMRI features using transformer architectures to address signal–image fusion challenges, resulting in an 18% gain in classification accuracy.</li>
-                                <li class="text-sm">Collaborated with faculty and graduate researchers to align algorithmic objectives with complex healthcare project goals, ensuring reproducible and scalable solutions.</li>
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-l-4 border-green-500">
+                            <h3 class="text-xl font-semibold text-gray-900">Research Collaborator - University of Arizona (ECE)</h3>
+                            <p class="text-sm text-gray-500 italic">Aug 2025 - Present | Tucson, AZ</p>
+                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 text-sm">
+                                <li>Designed and deployed data-preprocessing pipelines for EEG-fMRI signals, boosting downstream model stability by 15%.</li>
+                                <li>Implemented YOLO-based object detection to automate region-of-interest identification in neuroimaging data, cutting manual labelling time by 30%.</li>
+                                <li>Trained and fine-tuned transformer models on the university’s high-performance computing cluster, reducing runtime by 25%.</li>
+                                <li>Integrated multi-modal EEG and fMRI features using transformer architectures for an 18% gain in classification accuracy.</li>
                             </ul>
                         </div>
-                        
                         <!-- Data Specialist -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl border-l-4 border-green-500 hover:border-green-600">
-                            <h3 class="text-xl font-semibold text-gray-900">Data Specialist at TOPS Technologies Pvt. Ltd.</h3>
-                            <p class="text-sm text-gray-500 italic mt-1">September 2024 - April 2025 | Surat | Full-time</p>
-                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 ml-2">
-                                <li class="text-sm">Data Quality & Efficiency: Cleaned, transformed, and preprocessed over 500GB of raw, multi-source data using Python (Pandas, NumPy), resulting in a 40% reduction in data preparation time for weekly reports.</li>
-                                <li class="text-sm">Data Integrity & Accuracy: Implemented robust validation checks, achieving 99.9% accuracy in critical reports and eliminating manual reconciliation, saving the finance team ~5 hours per week.</li>
-                                <li class="text-sm">Database Optimization: Optimized analytics workflows by creating stored procedures and functions in SQL, which decreased average query execution time for mission-critical reports by 60%.</li>
-                                <li class="text-sm">Strategic Analysis: Applied statistical methods (correlation, regression) to analyze customer data, identifying key churn drivers that led to an 8% reduction in customer churn.</li>
-                                <li class="text-sm">BI Development: Built custom KPIs and DAX measures in BI tools, establishing a single source of truth for 15+ metrics and increasing user confidence in reporting by 30%.</li>
-                                <li class="text-sm">Predictive Modeling: Developed basic predictive models using Scikit-learn to forecast demand with 85% accuracy, helping to reduce warehousing costs by $50,000 annually.</li>
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-l-4 border-green-500">
+                            <h3 class="text-xl font-semibold text-gray-900">Data Specialist - TOPS Technologies</h3>
+                            <p class="text-sm text-gray-500 italic">Sep 2024 - Apr 2025 | Surat</p>
+                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 text-sm">
+                                <li>Processed 500GB+ of raw, multi-source data using Python (Pandas, NumPy), reducing data preparation time by 40%.</li>
+                                <li>Implemented robust validation checks, achieving 99.9% accuracy in mission-critical financial reports.</li>
+                                <li>Optimized SQL workflows through stored procedures, decreasing query execution time by 60%.</li>
+                                <li>Analyzed customer data to identify churn drivers, contributing to an 8% reduction in churn.</li>
+                                <li>Built predictive models using Scikit-learn to forecast demand with 85% accuracy.</li>
                             </ul>
                         </div>
-
-                        <!-- Junior Machine Learning Engineer -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl border-l-4 border-green-500 hover:border-green-600">
-                            <h3 class="text-xl font-semibold text-gray-900">Junior Machine Learning Engineer at Omdena</h3>
-                            <p class="text-sm text-gray-500 italic mt-1">September 2022 - July 2023 | Remote | Part-time</p>
-                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 ml-2">
-                                <li class="text-sm">Developed Decision Tree model to predict high-risk patients, achieving a final Recall of 83%.</li>
-                                <li class="text-sm">Reduced dataset imbalance by performing SMOTE upsampling, which enhanced model robustness in identifying minority class (high-risk) patients.</li>
-                                <li class="text-sm">Utilized K-means clustering to segment patients, successfully distinguishing between younger and older women for targeted analysis.</li>
-                                <li class="text-sm">Developed and deployed training and ranking of instances using Python scripts at the backend to operationalize the model's predictions.</li>
+                        <!-- Junior ML Engineer -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-l-4 border-green-500">
+                            <h3 class="text-xl font-semibold text-gray-900">Junior Machine Learning Engineer - Omdena</h3>
+                            <p class="text-sm text-gray-500 italic">Sep 2022 - July 2023 | Remote</p>
+                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 text-sm">
+                                <li>Developed Decision Tree model to predict high-risk patients, achieving a final Recall of 83%.</li>
+                                <li>Performed SMOTE upsampling to reduce dataset imbalance, enhancing identification of minority class patients.</li>
+                                <li>Utilized K-means clustering to segment patients, distinguishing between demographics for targeted analysis.</li>
+                                <li>Operationalized model predictions by implementing Python-based training and ranking scripts.</li>
                             </ul>
                         </div>
-                        
-                        <!-- Data Science Project Lead -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl transition duration-300 hover:shadow-2xl border-l-4 border-green-500 hover:border-green-600">
-                            <h3 class="text-xl font-semibold text-gray-900">Data Science Project Lead at Omdena Mumbai Chapter</h3>
-                            <p class="text-sm text-gray-500 italic mt-1">March 2023 - May 2023 | Remote | Part-time</p>
-                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 ml-2">
-                                <li class="text-sm">Led a team of 25+ members in the development of a predictive model for Air Quality Index (AQI) forecasting.</li>
-                                <li class="text-sm">Managed the analysis and complex preprocessing of time-series data, achieving a 90% efficiency increase in the subsequent machine learning models.</li>
-                                <li class="text-sm">Design and implemented a cloud-based data ingestion pipeline using AWS Lambda to collect data from public APIs and store it reliably in S3 buckets.</li>
-                                <li class="text-sm">Developed a time-series forecasting model to predict AQI in Mumbai with over 80% RMSE accuracy.</li>
+                        <!-- DS Project Lead -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-l-4 border-green-500">
+                            <h3 class="text-xl font-semibold text-gray-900">Data Science Project Lead - Omdena Mumbai</h3>
+                            <p class="text-sm text-gray-500 italic">Mar 2023 - May 2023 | Remote</p>
+                            <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 text-sm">
+                                <li>Led a team of 25+ members in the development of a predictive model for Air Quality Index (AQI) forecasting.</li>
+                                <li>Managed analysis and complex preprocessing of time-series data, achieving 90% efficiency increase in model performance.</li>
+                                <li>Implemented cloud-based data ingestion pipelines using AWS Lambda and S3.</li>
+                                <li>Developed a time-series forecasting model to predict AQI in Mumbai with over 80% accuracy.</li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                
-                <hr class="my-10 border-green-500">
-                
-                <!-- Career & Project Timeline Section -->
-                <section class="py-12 bg-gray-50 rounded-xl px-4 lg:px-6">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
+
+                <!-- Career Timeline -->
+                <section class="py-12 bg-gray-50 rounded-xl px-4 lg:px-6 mt-10">
+                    <h2 class="text-3xl font-bold mb-8 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
                         <i data-lucide="calendar-check" class="w-7 h-7 mr-3 text-green-600"></i>
-                        Career & Project Timeline
+                        Career Timeline
                     </h2>
-                    
                     <div class="timeline-container">
                         <div class="timeline-item">
-                            <div class="text-xs text-gray-500 italic">Aug 2025 - Present</div>
-                            <h4 class="text-lg font-semibold text-green-700 mt-1">Research Collaborator - University of Arizona</h4>
-                            <p class="text-sm text-gray-700">Leading EEG-fMRI fusion project and developing multimodal transformer models.</p>
+                            <div class="text-xs text-gray-500 font-bold uppercase">Aug 2025 - Present</div>
+                            <h4 class="text-lg font-semibold text-green-700 mt-1">Research Collaborator</h4>
+                            <p class="text-sm text-gray-700">Multimodal EEG-fMRI signal processing & transformer fine-tuning at UofA.</p>
                         </div>
                         <div class="timeline-item">
-                            <div class="text-xs text-gray-500 italic">Sep 2024 - Apr 2025</div>
-                            <h4 class="text-lg font-semibold text-green-700 mt-1">Data Specialist - TOPS Technologies</h4>
-                            <p class="text-sm text-gray-700">Data cleaning/optimization, strategic analysis, and BI development.</p>
+                            <div class="text-xs text-gray-500 font-bold uppercase">Sep 2024 - Apr 2025</div>
+                            <h4 class="text-lg font-semibold text-green-700 mt-1">Data Specialist</h4>
+                            <p class="text-sm text-gray-700">Enterprise data engineering and BI optimization at TOPS Technologies.</p>
                         </div>
                         <div class="timeline-item">
-                            <div class="text-xs text-gray-500 italic">Sept 2022 - July 2023</div>
-                            <h4 class="text-lg font-semibold text-green-700 mt-1">Junior ML Engineer - Omdena (Prediction Project)</h4>
-                            <p class="text-sm text-gray-700">Developed Decision Tree model and used SMOTE/K-means for high-risk patient prediction.</p>
+                            <div class="text-xs text-gray-500 font-bold uppercase">July 2024</div>
+                            <h4 class="text-lg font-semibold text-gray-800 mt-1">Bachelors in Data Science</h4>
+                            <p class="text-sm text-gray-700">Graduated from Jain University with 9.3/10 CGPA.</p>
                         </div>
                         <div class="timeline-item">
-                            <div class="text-xs text-gray-500 italic">Mar 2023 - May 2023</div>
-                            <h4 class="text-lg font-semibold text-green-700 mt-1">Data Science Project Lead - Omdena Mumbai Chapter</h4>
-                            <p class="text-sm text-gray-700">Led AQI prediction project and implemented AWS cloud data ingestion pipeline.</p>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="text-xs text-gray-500 italic">July 2024</div>
-                            <h4 class="text-lg font-semibold text-gray-800 mt-1">Graduation: Bachelor's in Data Science and Analytics</h4>
+                            <div class="text-xs text-gray-500 font-bold uppercase">Mar 2023 - May 2023</div>
+                            <h4 class="text-lg font-semibold text-green-700 mt-1">Omdena Project Lead</h4>
+                            <p class="text-sm text-gray-700">Managed cloud infrastructure and time-series forecasting for AQI projects.</p>
                         </div>
                     </div>
                 </section>
 
-                <hr class="my-10 border-green-500">
-
-                <!-- Projects Section -->
-                <section class="py-12 bg-gray-50 rounded-xl px-4 lg:px-6 mt-10" id="projects-section">
+                <!-- Featured Projects Section -->
+                <section class="py-12" id="projects-section">
                     <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
                         <i data-lucide="code" class="w-7 h-7 mr-3 text-green-600"></i>
-                        Projects & Achievements
+                        Featured Projects
                     </h2>
                     <div class="grid md:grid-cols-2 gap-8">
-                        
-                        <!-- Project 1: Book Recommendation System -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl flex flex-col justify-between">
+                        <!-- Medical LLM Project -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-t-4 border-blue-500 flex flex-col justify-between">
                             <div>
-                                <a 
-                                    href="https://github.com/avikumart/Book-recommendation-system/tree/main" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="text-xl font-semibold text-green-700 hover:text-green-900 transition duration-300 flex items-center"
-                                >
-                                    Collaborative Book Recommendation System
-                                    <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
-                                </a>
-                                <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside ml-2">
-                                    <li class="text-sm">Built a Collaborative Filtering recommendation engine using user-item matrix factorization.</li>
-                                    <li class="text-sm">Preprocessed large-scale book rating data and applied dimensionality reduction techniques.</li>
-                                    <li class="text-sm">Achieved high precision in suggesting relevant books to users based on similar reading preferences.</li>
+                                <h4 class="text-xl font-bold text-gray-900">Medical Healthcare LLM Fine-Tuning</h4>
+                                <p class="mt-2 text-sm text-gray-700 font-semibold italic">NLP-Project Repository</p>
+                                <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Fine-tuned an LLM on medical healthcare chat data for domain-specific dialogue.</li>
+                                    <li>Applied PEFT (LoRA) techniques to optimize model weights with limited compute.</li>
+                                    <li>Implemented data cleaning pipelines for unstructured medical chat datasets.</li>
+                                    <li>Evaluated accuracy using ROUGE and BLEU metrics for healthcare intent.</li>
                                 </ul>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Recommender System</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Collaborative Filtering</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Python</span>
-                            </div>
+                            <a href="https://github.com/avikumart/NLP-Project" target="_blank" class="mt-4 text-blue-600 font-bold inline-flex items-center hover:underline text-sm">
+                                View Repository <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
                         </div>
-
-                        <!-- Project 2: Data Warehousing and Analytics -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl flex flex-col justify-between">
+                        <!-- Book Recommender -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-t-4 border-green-500 flex flex-col justify-between">
                             <div>
-                                <a 
-                                    href="https://github.com/avikumart/Data-Warehousing-and-Analytics-Project" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="text-xl font-semibold text-green-700 hover:text-green-900 transition duration-300 flex items-center"
-                                >
-                                    Cloud Data Warehousing & ETL Pipeline
-                                    <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
-                                </a>
-                                <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside ml-2">
-                                    <li class="text-sm">Design and implemented a scalable Star Schema data warehouse model.</li>
-                                    <li class="text-sm">Developed automated ETL pipeline using cloud services (simulated) to ingest, clean, and transform multi-source data.</li>
-                                    <li class="text-sm">Created an integrated BI dashboard for real-time operational reporting and trend analysis.</li>
+                                <h4 class="text-xl font-bold text-gray-900">Collaborative Book Recommender</h4>
+                                <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Built a matrix factorization engine for user-item recommendations.</li>
+                                    <li>Applied dimensionality reduction to handle large-scale rating data.</li>
+                                    <li>Achieved high precision in predicting similar reading preferences.</li>
                                 </ul>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Data Warehousing</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">ETL</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Star Schema</span>
-                            </div>
+                            <a href="https://github.com/avikumart/Book-recommendation-system/tree/main" target="_blank" class="mt-4 text-green-600 font-bold inline-flex items-center hover:underline text-sm">
+                                View Repository <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
                         </div>
-
-                        <!-- Project 3: NL2SQL -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl flex flex-col justify-between">
+                        <!-- Cloud DW -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-t-4 border-green-500 flex flex-col justify-between">
                             <div>
-                                <a 
-                                    href="#" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="text-xl font-semibold text-green-700 hover:text-green-900 transition duration-300 flex items-center"
-                                >
-                                    NL2SQL Generation Application
-                                    <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
-                                </a>
-                                <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside ml-2">
-                                    <li class="text-sm">Design an NL2SQL GenAI app using Llama Index and an LLM to automate query generation.</li>
-                                    <li class="text-sm">Incorporated Advanced RAG techniques: Semantic Chunking, Metadata Filtering, and Vector Search Optimization.</li>
-                                    <li class="text-sm">Implemented LLM optimization (Prompt Compression, Caching) to reduce latency.</li>
+                                <h4 class="text-xl font-bold text-gray-900">Cloud Data Warehousing</h4>
+                                <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Designed a scalable Star Schema for enterprise-level analytics.</li>
+                                    <li>Developed automated ETL pipelines for multi-source data ingestion.</li>
+                                    <li>Integrated BI dashboards for real-time operational reporting.</li>
                                 </ul>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">GenAI</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">RAG</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Llama Index</span>
-                            </div>
+                            <a href="https://github.com/avikumart/Data-Warehousing-and-Analytics-Project" target="_blank" class="mt-4 text-green-600 font-bold inline-flex items-center hover:underline text-sm">
+                                View Repository <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
                         </div>
-
-                        <!-- Project 4: Cyberbullying Detection -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl flex flex-col justify-between">
+                        <!-- Cyberbullying -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-t-4 border-green-500 flex flex-col justify-between">
                             <div>
-                                <a 
-                                    href="https://github.com/avikumart/Cyberbullying-Detection-NLP" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="text-xl font-semibold text-green-700 hover:text-green-900 transition duration-300 flex items-center"
-                                >
-                                    Cyberbullying Detection using NLP
-                                    <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
-                                </a>
-                                <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside ml-2">
-                                    <li class="text-sm">Performed end-to-end unstructured text data processing and cleaning.</li>
-                                    <li class="text-sm">Applied word2vec embedding with an XGBoost classifier, achieving a strong log loss of 12.</li>
+                                <h4 class="text-xl font-bold text-gray-900">Cyberbullying Detection NLP</h4>
+                                <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Processed unstructured text data using word2vec embeddings.</li>
+                                    <li>Trained XGBoost classifier with optimized log-loss performance.</li>
+                                    <li>Resolved class imbalance in toxicity datasets for robust detection.</li>
                                 </ul>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">NLP</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">XGBoost</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Classification</span>
-                            </div>
+                            <a href="https://github.com/avikumart/Cyberbullying-Detection-NLP" target="_blank" class="mt-4 text-green-600 font-bold inline-flex items-center hover:underline text-sm">
+                                View Repository <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
                         </div>
-
-                        <!-- Project 5: Road Traffic Severity -->
-                        <div class="bg-white p-6 shadow-xl rounded-xl flex flex-col justify-between">
+                        <!-- Road Traffic -->
+                        <div class="bg-white p-6 shadow-xl rounded-xl border-t-4 border-green-500 flex flex-col justify-between">
                             <div>
-                                <a 
-                                    href="https://github.com/avikumart/Road-Traffic-Severity-Classification-Project" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="text-xl font-semibold text-green-700 hover:text-green-900 transition duration-300 flex items-center"
-                                >
-                                    Road Traffic Severity Classification Project
-                                    <i data-lucide="chevron-right" class="w-5 h-5 ml-1"></i>
-                                </a>
-                                <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside ml-2">
-                                    <li class="text-sm">Analyzed data using Dabl and Pandas, treated missing values, and performed categorical encoding.</li>
-                                    <li class="text-sm">Utilized Principal Component Analysis (PCA) to reduce dataset dimensionality.</li>
+                                <h4 class="text-xl font-bold text-gray-900">Traffic Severity Prediction</h4>
+                                <ul class="mt-3 text-xs text-gray-600 list-disc list-inside space-y-1">
+                                    <li>Applied Principal Component Analysis (PCA) for feature dimensionality reduction.</li>
+                                    <li>Treated multi-source traffic data for missing values and outliers.</li>
+                                    <li>Categorical encoding for spatial and temporal features.</li>
                                 </ul>
                             </div>
-                            <div class="mt-4 flex flex-wrap gap-2">
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">ML</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Data Analysis</span>
-                                <span class="text-xs font-medium bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Python</span>
-                            </div>
+                            <a href="https://github.com/avikumart/Road-Traffic-Severity-Classification-Project" target="_blank" class="mt-4 text-green-600 font-bold inline-flex items-center hover:underline text-sm">
+                                View Repository <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                            </a>
                         </div>
-
                     </div>
                 </section>
-                
+
                 <!-- Research Work Section -->
-                <section class="py-12 bg-gray-100 rounded-xl px-4 lg:px-6 mt-10" id="research-work">
+                <section class="py-12 mt-10" id="research-work">
                     <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
                         <i data-lucide="brain" class="w-7 h-7 mr-3 text-green-600"></i>
                         Research Work
                     </h2>
                     <div class="bg-white p-6 shadow-xl rounded-xl border-l-4 border-green-500">
-                        <h3 class="text-xl font-semibold text-gray-900">Classifying Sleep and Rest States using EEG-fMRI Fusion Transformer</h3>
-                        <p class="text-sm text-gray-500 italic mt-1 mb-3">Multimodal Deep Learning for Healthcare</p>
-                        <ul class="mt-3 text-gray-700 list-disc list-inside space-y-2 ml-2">
-                            <li class="text-sm">Developed a novel multimodal transformer fusion architecture for classifying brain states (sleep/rest) by integrating EEG and fMRI signals.</li>
-                            <li class="text-sm">Utilized fMRI's submillimeter-to-millimeter spatial resolution for precise localization of neural processes.</li>
-                            <li class="text-sm">Incorporated EEG's millisecond-level temporal resolution to capture rapid neural dynamics for high-fidelity state tracking.</li>
-                            <li class="text-sm">Design a strategy for multimodal training (fMRI + EEG) that enables low-cost, portable, and accessible inference using only EEG, maximizing utility and accessibility.</li>
+                        <h3 class="text-xl font-bold text-gray-900">Classifying Sleep and Rest States using EEG-fMRI Fusion Transformer</h3>
+                        <p class="text-md text-green-700 font-semibold mb-3">Multimodal Deep Learning for Healthcare</p>
+                        <ul class="mt-3 text-sm text-gray-700 list-disc list-inside space-y-2">
+                            <li>Developed a novel multimodal transformer fusion architecture for classifying brain states (sleep/rest) by integrating EEG and fMRI signals.</li>
+                            <li>Utilized fMRI's submillimeter-to-millimeter spatial resolution for precise localization of neural processes.</li>
+                            <li>Incorporated EEG's millisecond-level temporal resolution to capture rapid neural dynamics for high-fidelity state tracking.</li>
+                            <li>Design a strategy for multimodal training (fMRI + EEG) that enables low-cost, portable, and accessible inference using only EEG, maximizing utility and accessibility.</li>
                         </ul>
                     </div>
                 </section>
-                
-                <!-- GitHub Activity Section -->
+
+                <!-- RSS Feeds -->
                 <section class="py-12 bg-gray-50 rounded-xl px-4 lg:px-6 mt-10">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
-                        <i data-lucide="git-branch" class="w-7 h-7 mr-3 text-green-600"></i>
-                        Recent GitHub Activity
-                    </h2>
-                    <p class="text-sm text-gray-700 mb-4">Live updates from the GitHub activity feed:</p>
-                    <div class="bg-white p-2 rounded-lg shadow-inner">
-                        <iframe 
-                            src="https://rss.bloople.net/?url=https://github.com/avikumart.atom" 
-                            width="100%" 
-                            height="400" 
-                            title="GitHub RSS Feed for avikumart"
-                            class="border-none"
-                        ></iframe>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h2 class="text-2xl font-bold mb-4 flex items-center text-gray-800 border-b-2 border-green-500 pb-1">
+                                <i data-lucide="git-branch" class="w-6 h-6 mr-2 text-green-600"></i> GitHub Activity
+                            </h2>
+                            <iframe src="https://rss.bloople.net/?url=https://github.com/avikumart.atom" width="100%" height="400" class="border rounded shadow-inner bg-white"></iframe>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold mb-4 flex items-center text-gray-800 border-b-2 border-green-500 pb-1">
+                                <i data-lucide="book-open" class="w-6 h-6 mr-2 text-green-600"></i> Medium Posts
+                            </h2>
+                            <iframe src="https://rss.bloople.net/?url=https://medium.com/feed/@avikumart_" width="100%" height="400" class="border rounded shadow-inner bg-white"></iframe>
+                        </div>
                     </div>
                 </section>
 
-                <!-- Medium Activity Section -->
-                <section class="py-12 bg-gray-100 rounded-xl px-4 lg:px-6 mt-10">
-                    <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
-                        <i data-lucide="book-open-text" class="w-7 h-7 mr-3 text-green-600"></i>
-                        Latest Articles on Medium
-                    </h2>
-                    <p class="text-sm text-gray-700 mb-4">Read my latest posts on Data Science and ML:</p>
-                    <div class="bg-white p-2 rounded-lg shadow-inner">
-                        <iframe 
-                            src="https://rss.bloople.net/?url=https://medium.com/feed/@avikumart_" 
-                            width="100%" 
-                            height="400" 
-                            title="Medium RSS Feed for @avikumart_"
-                            class="border-none"
-                        ></iframe>
-                    </div>
-                </section>
-                
-                <!-- Contact Me Section -->
+                <!-- Contact Section -->
                 <section class="py-12 bg-green-50 rounded-xl px-4 lg:px-6 mt-10" id="contact-me">
                     <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
-                        <i data-lucide="mail-check" class="w-7 h-7 mr-3 text-green-600"></i>
-                        Contact Me
+                        <i data-lucide="mail-check" class="w-7 h-7 mr-3 text-green-600"></i> Contact
                     </h2>
-                    <p class="text-sm text-gray-700 mb-6">Interested in collaborating or just want to say hello? Fill out the form below to send me a message directly. (Note: This will open your default email client to send the message.)</p>
-                    
                     <form action="mailto:avikumart@arizona.edu" method="GET" enctype="text/plain" class="space-y-4 bg-white p-6 rounded-lg shadow-xl">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" name="subject" placeholder="Your Name" 
-                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="sender-name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                                <input type="text" id="sender-name" name="subject" placeholder="John Doe" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required>
+                            </div>
+                            <div>
+                                <label for="sender-email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                                <input type="email" id="sender-email" name="cc" placeholder="john@example.com" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required>
+                            </div>
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
-                            <input type="email" id="email" name="cc" placeholder="your.email@example.com" 
-                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required>
+                            <label for="message-body" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message-body" name="body" rows="4" placeholder="How can I help you?" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required></textarea>
                         </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                            <textarea id="message" name="body" rows="5" placeholder="Enter your message here..." 
-                                      class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required></textarea>
-                        </div>
-                        <button type="submit" 
-                                class="w-full px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition duration-300 shadow-md flex items-center justify-center">
-                            <i data-lucide="send" class="w-5 h-5 mr-2"></i>
-                            Send Message
+                        <button type="submit" class="w-full py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition transform hover:scale-[1.01] active:scale-95 flex items-center justify-center">
+                            <i data-lucide="send" class="w-5 h-5 mr-2"></i> Send Message
                         </button>
                     </form>
                 </section>
-
             </div>
         </div>
     </main>
 
-    <!-- Footer Component -->
-    <footer class="bg-gray-900 text-white p-6 mt-12">
-        <div class="max-w-7xl mx-auto text-center text-sm text-gray-400">
-            <p>&copy; 2025 Avi Kumar Talaviya. Built with simple HTML & Tailwind CSS.</p>
-            <p class="mt-1">
-                <a href="mailto:avikumart@arizona.edu" class="text-green-400 hover:text-green-300">Email</a> | 
-                <a href="https://github.com/avikumart" target="_blank" rel="noopener noreferrer" class="ml-2 text-green-400 hover:text-green-300">GitHub</a> |
-                <a href="https://www.linkedin.com/in/avikumar-talaviya-739153147/" target="_blank" rel="noopener noreferrer" class="ml-2 text-green-400 hover:text-green-300">LinkedIn</a>
-            </p>
-        </div>
+    <footer class="bg-gray-900 text-white p-8 mt-12 text-center text-sm text-gray-400">
+        <p>&copy; 2025 Avi Kumar Talaviya. Built with Tailwind CSS.</p>
     </footer>
 
-    <!-- Initialize Lucide icons -->
     <script>
         lucide.createIcons();
-    </script>
-    
-    <!-- Gemini Logic -->
-    <script>
         const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=";
         const API_KEY = ""; // Provided by environment
 
-        function getProfileContent() {
-            const sections = [
-                document.getElementById('about-me'),
-                document.getElementById('technical-expertise'),
-                document.getElementById('work-experience'),
-                document.getElementById('research-work'),
-                document.getElementById('projects-section')
-            ];
-            
-            let content = '';
-            sections.forEach(section => {
-                if (section) {
-                    content += section.textContent.trim() + '\n\n';
-                }
-            });
+        document.getElementById('generate-question-btn').addEventListener('click', async () => {
+            const btn = document.getElementById('generate-question-btn');
+            const load = document.getElementById('question-loading');
+            const out = document.getElementById('question-output');
+            const txt = document.getElementById('question-text');
 
-            return content.replace(/\s+/g, ' ').trim().substring(0, 8000);
-        }
+            btn.disabled = true;
+            load.classList.remove('hidden');
+            out.classList.add('hidden');
 
-        async function generateQuestion(profileContent) {
-            const systemPrompt = "You are a Senior Data Science Hiring Manager. Generate one challenging behavioral interview question requiring a quantifiable STAR-format answer based on the profile.";
-            const userQuery = `Based on the candidate profile, generate one challenging interview question:\n\n${profileContent}`;
-            
-            const payload = {
-                contents: [{ parts: [{ text: userQuery }] }],
-                systemInstruction: { parts: [{ text: systemPrompt }] }
-            };
-            
+            const context = document.body.innerText.substring(0, 8000);
             try {
                 const response = await fetch(API_URL + API_KEY, {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: `Based on this resume, generate ONE highly challenging technical or behavioral interview question for a Senior Data Scientist role. Profile content: ${context}` }] }],
+                        systemInstruction: { parts: [{ text: "You are a Senior DS Hiring Manager. Generate one specific, challenging question that requires a STAR-format answer." }] }
+                    })
                 });
-
-                const result = await response.json();
-                return result?.candidates?.[0]?.content?.parts?.[0]?.text || "Error: Could not generate question.";
-            } catch (error) {
-                console.error("Gemini error:", error);
-                return "Sorry, I couldn't generate a question right now.";
+                const res = await response.json();
+                txt.textContent = res.candidates[0].content.parts[0].text;
+                out.classList.remove('hidden');
+            } catch (e) {
+                txt.textContent = "Error: Service currently unavailable. Please try again.";
+                out.classList.remove('hidden');
             }
-        }
-
-        document.getElementById('generate-question-btn').addEventListener('click', async () => {
-            const button = document.getElementById('generate-question-btn');
-            const loading = document.getElementById('question-loading');
-            const outputDiv = document.getElementById('question-output');
-            const outputText = document.getElementById('question-text');
-
-            button.disabled = true;
-            outputDiv.classList.add('hidden');
-            loading.classList.remove('hidden');
-
-            const profileContent = getProfileContent();
-            const question = await generateQuestion(profileContent);
-
-            loading.classList.add('hidden');
-            outputDiv.classList.remove('hidden');
-            outputText.textContent = question;
-            button.disabled = false;
+            load.classList.add('hidden');
+            btn.disabled = false;
         });
     </script>
 </body>
