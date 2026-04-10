@@ -470,22 +470,23 @@
                     <h2 class="text-3xl font-bold mb-6 flex items-center text-gray-800 border-b-4 border-green-500 pb-2">
                         <i data-lucide="mail-check" class="w-7 h-7 mr-3 text-green-600"></i> Contact
                     </h2>
-                    <form action="mailto:avikumart@arizona.edu" method="GET" enctype="text/plain" class="space-y-4 bg-white p-6 rounded-lg shadow-xl">
+                    <form id="contact-form" class="space-y-4 bg-white p-6 rounded-lg shadow-xl">
                         <div class="grid md:grid-cols-2 gap-4">
                             <div>
                                 <label for="sender-name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                                <input type="text" id="sender-name" name="subject" placeholder="John Doe" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required>
+                                <input type="text" id="sender-name" name="name" placeholder="John Doe" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required>
                             </div>
                             <div>
                                 <label for="sender-email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
-                                <input type="email" id="sender-email" name="cc" placeholder="john@example.com" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required>
+                                <input type="email" id="sender-email" name="email" placeholder="john@example.com" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required>
                             </div>
                         </div>
                         <div>
                             <label for="message-body" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                            <textarea id="message-body" name="body" rows="4" placeholder="How can I help you?" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required></textarea>
+                            <textarea id="message-body" name="message" rows="4" placeholder="How can I help you?" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none" required></textarea>
                         </div>
-                        <button type="submit" class="w-full py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition transform hover:scale-[1.01] active:scale-95 flex items-center justify-center">
+                        <div id="contact-status" class="hidden text-sm font-medium p-3 rounded-lg"></div>
+                        <button type="submit" id="contact-submit-btn" class="w-full py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition transform hover:scale-[1.01] active:scale-95 flex items-center justify-center disabled:bg-gray-400 disabled:cursor-not-allowed">
                             <i data-lucide="send" class="w-5 h-5 mr-2"></i> Send Message
                         </button>
                     </form>
@@ -500,6 +501,57 @@
 
     <script>
         lucide.createIcons();
+
+        // ── Supabase Contact Form ──
+        // Replace with your Supabase project URL and Edge Function URL
+        const SUPABASE_FUNCTION_URL = "https://ctakmewqvwixzgiiteen.supabase.co/functions/v1/contact-form";
+
+        document.getElementById('contact-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('contact-submit-btn');
+            const status = document.getElementById('contact-status');
+            const form = e.target;
+
+            const name = document.getElementById('sender-name').value.trim();
+            const email = document.getElementById('sender-email').value.trim();
+            const message = document.getElementById('message-body').value.trim();
+
+            if (!name || !email || !message) return;
+
+            btn.disabled = true;
+            btn.innerHTML = '<i data-lucide="loader" class="w-5 h-5 mr-2 animate-spin"></i> Sending...';
+            lucide.createIcons();
+            status.classList.add('hidden');
+
+            try {
+                const response = await fetch(SUPABASE_FUNCTION_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message })
+                });
+                const result = await response.json();
+
+                if (response.ok) {
+                    status.textContent = 'Message sent successfully! I will get back to you soon.';
+                    status.className = 'text-sm font-medium p-3 rounded-lg bg-green-100 text-green-800';
+                    form.reset();
+                } else {
+                    status.textContent = result.error || 'Something went wrong. Please try again.';
+                    status.className = 'text-sm font-medium p-3 rounded-lg bg-red-100 text-red-800';
+                }
+                status.classList.remove('hidden');
+            } catch (err) {
+                status.textContent = 'Network error. Please try again later.';
+                status.className = 'text-sm font-medium p-3 rounded-lg bg-red-100 text-red-800';
+                status.classList.remove('hidden');
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = '<i data-lucide="send" class="w-5 h-5 mr-2"></i> Send Message';
+            lucide.createIcons();
+        });
+
+        // ── Gemini Interview Prep ──
         const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=";
         const API_KEY = ""; // Provided by environment
 

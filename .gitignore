@@ -25,3 +25,6 @@ os artifacts
 
 vite specific
 .vite/
+
+# local env files
+supabase/.temp
