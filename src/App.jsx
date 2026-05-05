@@ -34,6 +34,17 @@ const experience = [
 
 const projects = [
   {
+    name: "VetProtocol AI",
+    link: "https://drive.google.com/drive/folders/1f8XNo4_PHK4al3yu4Hu-B3C4L_1ycRW4?usp=sharing",
+    details: [
+      "Built an agentic RAG system to help the OHAIRE Lab manage complex clinical trial protocols for the SERVES study.",
+      "Orchestrated rewriter, retriever, reranker, and generator agents with citation-backed responses, plus contradiction flagging and linker agents for quality control.",
+      "Implemented document ingestion, text chunking, embedding, and Redis vector search to deliver faster, more accurate protocol access than manual search.",
+      "Improved retrieval accuracy to 92% vs. 62% manually, response consistency to 93% vs. 50%, and reduced average search time from 18.5 minutes to 2.3 minutes.",
+    ],
+    tags: ["RAG", "Agentic AI", "Clinical Trials", "Redis", "LLM", "LangChain","Cerebras","Vector Search","Prompt Engineering","ETL Pipelines"]
+  },
+  {
     name: "Natural Language to SQL (NL2SQL) Generation Application",
     link: "#", // Placeholder as link not provided in resume
     details: [
